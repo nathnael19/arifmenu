@@ -30,20 +30,19 @@ export default function RightPanel({ onScreenChange, onLogin }) {
   return (
     <div className="relative z-20 flex w-full h-[400px] items-center justify-center p-6 md:p-12">
       <div className="w-full max-w-md">
-        {/* Mobile Header */}
-        <div className="md:hidden flex flex-col items-center text-center mb-8">
-          <img src="/images/ariflogo.svg" alt="Arifpay Logo" className="w-28 mb-3 text-amber-50" />
-          <p className="px-6 text-sm text-black">
-            Please Login to manage Merchants, their menus and prices. Thank you
-          </p>
-        </div>
-
         {/* Login Card */}
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h2 className="hidden md:block text-2xl text-gray-600 text-center mb-6">
             Hey there 👋
           </h2>
+          {/* Mobile Header */}
+          <div className="md:hidden flex flex-col items-center text-center mb-8">
+            <img src="/images/arifekub.svg" alt="Arifpay Logo" className="w-28 mb-3 ]" />
 
+            <p className="px-6 text-sm text-[#6B7280]">
+              Please Login to manage Merchants, their menus and prices. Thank you
+            </p>
+          </div>
           <form onSubmit={handleLogin} className="space-y-6">
             {/* Email */}
             <div>
